@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.Write("Введите число: ");
-string number = Console.ReadLine();
+ Console.Write("Введите число: ");
 
-if (number.Length > 2) Console.WriteLine(number[1]);
-else Console.WriteLine("Введено не трёхзначное число");
+int threeDigitNumber = Convert.ToInt32(Console.ReadLine());
+string stringNumber = Convert.ToString(threeDigitNumber);
+
+if (stringNumber.Length > 2) Console.WriteLine("Вторая цифра этого числа: "+stringNumber[1]);
+else Console.WriteLine("Введено не трёхзначное число!");
