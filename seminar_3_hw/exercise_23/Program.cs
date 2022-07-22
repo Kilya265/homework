@@ -2,13 +2,13 @@
 
 Console.Write("Введите число: ");
 
-int sqr = Convert.ToInt32(Console.ReadLine());
+int cube = Convert.ToInt32(Console.ReadLine());
 
-void Sqr(int[] sqr){
+void Cube(int[] cube){
   int counter = 0;
-  int length = sqr.Length;
+  int length = cube.Length;
   while (counter <  length){
-    sqr[counter] = Convert.ToInt32(Math.Pow(counter, 2));
+    cube[counter] = Convert.ToInt32(Math.Pow(counter, 3));
     counter++;
   }
 }
@@ -22,6 +22,6 @@ void PrintArry(int[] coll){
   }
 } 
 
-int[] arry = new int[sqr+1];
-Sqr(arry);
+int[] arry = new int[cube+1];
+Cube(arry);
 PrintArry(arry);
