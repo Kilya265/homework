@@ -4,9 +4,9 @@
 */
 
 Console.Write("Введите кол-во строк: ");
-int row = int.Parse(Console.ReadLine());
+int row = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите кол-во столбцов: ");
-int col = int.Parse(Console.ReadLine());
+int col = Convert.ToInt32(Console.ReadLine());
 
 int[,] array = new int[row, col];
 getArray(array);
